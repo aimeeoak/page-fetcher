@@ -18,12 +18,10 @@ const write = function(data, path) {
     if (err) {
     console.log('error');
     }
-   else {
-   console.log(`Downloaded and saved ${data.length} bytes to ${path}`);
+    else {
+    console.log(`Downloaded and saved ${data.length} bytes to ${path}`);
    }
   });
 };
 
 fetcher(url, path);
-
-//used https://github.com/davemgj84/page-fetcher/blob/master/fetcher.js to troubleshoot at 12:00am when I wanted to die
